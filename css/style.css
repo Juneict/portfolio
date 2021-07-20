@@ -286,14 +286,38 @@ header .navbar a:hover{
     flex-wrap: wrap;
 
 }
-.contact .row form .inputBox .input,
+.contact .row form .inputBox input,
 .contact .row form .box,
 .contact .row form textarea{
     width: 100%;
     border-radius: .5rem;
-    color: #333;
+    color: #999;
     padding: 1rem;
     margin: 1rem 0;
+    border: 1px solid rgba(0,0,0,.1);
+    text-transform: none;
+}
+.contact .row form .inputBox input:focus,
+.contact .row form .box:focus,
+.contact .row form textarea:focus{
+    border-color: var(--brown);
+}
+.contact .row form .inputBox input{
+    width: 49%;
+}
+.contact .row form textarea{
+    height: 20rem;
+    resize: none;
+}
+.footer{
+    padding: 2.5rem;
+    font-size: 1rem;
+    color: #666;
+    background: #ffff;
+    text-align: center;
+}
+.footer span{
+    color: var(--brown);
 }
 
 
